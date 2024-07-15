@@ -36,6 +36,9 @@ while True:
         for i in range(0, len(players), 2): #range takes 3 parameters, the index range (the list of players) and the increment (2 at a time)
             print(players[i] + ' vs ' + players[i + 1])
 
+            start = random.randrange(i, i+2)
+            print(players[start] + ' starts')
+
     response = input('Pick teams/matches again? Type y or n: ')
     if response == 'n':
         break
